@@ -17,7 +17,9 @@ public class FileHandling {
         ArrayList<String> employees = new ArrayList<>();
         readFile(employees);
         displayEmployees(employees);
-        //writeFile(employees);
+        writeFile(employees);
+        
+        //Path[] paths = new Path[5];
     }
 
     public static void displayEmployees(ArrayList<String> employees) {
@@ -28,8 +30,8 @@ public class FileHandling {
 
     public static void readFile(ArrayList<String> employees) {
         String line = "";
-        Path path = Paths.get("C:/Java Programing/usernames.txt");
-        try (BufferedReader fileInput = Files.newBufferedReader(path, Charset.forName("UTF-16"))) {
+        Path path = Paths.get("C:/Java Programing/employees.txt");
+        try (BufferedReader fileInput = Files.newBufferedReader(path, Charset.forName("UTF-8"))) {
             line = fileInput.readLine();
             while (line != null) {
                 employees.add(line);  // Adiciona cada linha lida à lista de funcionários
@@ -60,3 +62,6 @@ public class FileHandling {
     	System.exit(0);
     }
 }
+
+//writeFile(employees);
+//Path path = Paths.get("C:/Java Programing/usernames.txt");
