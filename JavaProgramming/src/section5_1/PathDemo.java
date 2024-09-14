@@ -15,6 +15,10 @@ public class PathDemo {
 		paths[2] = Paths.get("C:\\Java Programing", "NI02" ,"DemorFile.txt");
 		paths[3] = Paths.get("DemorFile.txt");
 		paths[4] = Paths.get(URI.create("file:///~/DemoFile.txt"));
+	
+	for(int i =0; i < paths.length; i++) {
+		System.out.println("Caminho do path["+ i +"]:" + paths[i]);
 	}
 
+  }
 }
