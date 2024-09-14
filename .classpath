@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Calculator/src"/>
+	<classpathentry kind="src" path="JavaBank"/>
+	<classpathentry kind="src" path="JavaProduject/src"/>
+	<classpathentry kind="src" path="JavaProgramming/src"/>
+	<classpathentry kind="lib" path="dowloadJava/Calculator/Calculator.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
