@@ -102,7 +102,7 @@ public class Gerenciadordedados {
         }
     }
 
-    // Carregar dados do arquivo
+
     private void loadItems() {
         File file = new File(FILE_NAME);
         if (file.exists()) {
